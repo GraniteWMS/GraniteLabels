@@ -15,8 +15,8 @@ one place and
 
 ## Terminology
 - Pull (fetch the latest file from GitHub)
-- Push (see this as saving a file localy on your machine, it is not yet updated to GitHub)
-- Commit (commit will update github)
+- Commit (see this as saving a file localy on your machine, it is not yet updated to GitHub)
+- Push (Push will update github)
 
 ## Best practices comment
 - Comments are important, comment on what you did to the file (the change)
@@ -32,6 +32,6 @@ one place and
 
 1. Pull latest before you begin working on any file
 2. Make the change on the original file (do not copy and replace files, work on the file in github that is checked out)
-3. Push as soon as you done (don’t leave checked out)
+3. Commit as soon as you done (don’t leave checked out)
 4. Add with meaningful comment 
-5. Commit straight after you have Push the change
+5. Push straight after you have Commit the change
