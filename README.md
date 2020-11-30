@@ -2,9 +2,7 @@
 
 # Github basics
 
-The github ecosystem is big and you can setup many things to accomplish what you need from it.
-For us the purpose is to have our important 'files' like labels, custom SQL scripts ect. in 
-one place and 
+
 
 
 ## Dont's
