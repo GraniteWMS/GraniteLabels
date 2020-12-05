@@ -1,6 +1,6 @@
 # GraniteLabels
 
-# Github basics
+## Repository structure
 
 - All labels (ZPL, bartender ect) is located in Labels folder.
 - The label folder is purely for use for labels no documents and no install.
