@@ -1,14 +1,15 @@
 # GraniteLabels
 
 The purpose of this repository is to have one central place for all Granite WMS production labels.
-Take note that you can add a `Readme.md` file to any folder and that will display on the GitHub page, the purpose of this is to document the repository.
+Take note that you can add a `Readme.md` file to any folder and that will display on the GitHub page, the purpose of this is to add the necessary documentation.
 
 ## Repository structure
 
-- All labels (ZPL, bartender etc) is located in Labels folder.
-- The label folder is purely for use for labels no documents and no install.
-- All installs of software is located in DropBox.
-- Any documentation that you feel should accompany the labels should be added to Docs folder
+- All labels (ZPL, bartender etc) is located in Labels folder
+- The label folder is purely for use for labels no documents and no install
+- Create the needed folders and sub folders to structure files so we can find it easily  
+- All installs of software is located in DropBox and should not go into GitHub
+- Any documentation that you feel should accompany the labels should be added to Docs folder, consider using ReadMe.md where possible if you need to explain something or bring something to peoples attention when they are looking at files.
 
 ## Basic guidelines
 - Never copy your GitHub folder and place it somewhere else (hidden files and folders in that folder will corrupt)
@@ -28,7 +29,7 @@ Take note that you can add a `Readme.md` file to any folder and that will displa
 - Prefix the comment with **Change, Fix, New*** depending on what you have done 
 - You do not have to comment the reason behind what you did, or who instructed you to do it, we are only interested to view the change on the single file and the comment you made for that change
 - **Examples**
--- Change (add SerialNumber to label)
--- Change (remove ExpiryDate)
--- New (new label for TrackingEntity)
+- Change (add SerialNumber to label)
+- Change (remove ExpiryDate)
+- New (new label for TrackingEntity)
 
