@@ -1,0 +1,362 @@
+﻿<IntegrationFile Version="9" ID="3cac461e-c9d4-4f21-8ca5-936f23b14e18">
+  <ActionGroup Name="IntegrationFileActionGroup" ID="1dfb49ac-82f9-42c5-a38f-a4eb048cf3ef" RunMethod="Sequential" MessagingEnabled="false">
+    <Actions>
+      <DatabaseIntegration Name="Database Integration" ID="6781d759-8564-4ab9-bc9a-f73bfaff9b78" IgnoreErrors="true" FailureRetries="2" PollInterval="5000" ActionAfterFailure="Retry">
+        <Variables>
+          <Variable Name="__internal_UIMetaData_{10197317-68C1-4B0D-9BA4-0D5FEC3B6338}__" Type="Seagull.Integrations.VariableDictionary">
+            <Value>
+              <Variable Name="CanSupportUpdate" Type="System.Boolean">
+                <Value>true</Value>
+              </Variable>
+              <Variable Name="TableList" Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+                <Value>
+                  <string>__RefactorLog</string>
+                  <string>API_QueryDocumentProgress</string>
+                  <string>API_QueryDocumentProgressDetail</string>
+                  <string>API_QueryDocuments</string>
+                  <string>API_QueryInventoryInstock</string>
+                  <string>API_QueryInventoryOnHold</string>
+                  <string>API_QueryInventoryOnHoldInstock</string>
+                  <string>API_QueryInventoryStockTake</string>
+                  <string>API_QueryInventoryStockTakeInstock</string>
+                  <string>API_QueryInventoryVariance</string>
+                  <string>API_QueryInventoryVarianceDetail</string>
+                  <string>API_QueryLocations</string>
+                  <string>API_QueryMasterItems</string>
+                  <string>API_QueryOrderLines</string>
+                  <string>API_QueryPickslipLines</string>
+                  <string>API_QueryProcesses</string>
+                  <string>API_QueryStockDetail</string>
+                  <string>API_QueryStockTakeLines</string>
+                  <string>API_QueryStockTakeLinesSummary</string>
+                  <string>API_QueryStockTotals</string>
+                  <string>API_QueryStockTotalsDetail</string>
+                  <string>API_QueryTrackingEntities</string>
+                  <string>API_QueryTransactions</string>
+                  <string>API_QueryUserGroups</string>
+                  <string>API_QueryUsers</string>
+                  <string>App_DocumentDetail</string>
+                  <string>app_documentdetail_pickslips</string>
+                  <string>App_DocumentHeader</string>
+                  <string>App_Integration_Transactions</string>
+                  <string>App_Inventory_ByLocation</string>
+                  <string>App_Inventory_Instock</string>
+                  <string>App_Inventory_Pallets</string>
+                  <string>App_Inventory_QCHold</string>
+                  <string>App_Inventory_StockTake</string>
+                  <string>App_MasterFiles_Locations</string>
+                  <string>App_MasterFiles_MasterItems</string>
+                  <string>App_Outbound_Packing</string>
+                  <string>App_Outbound_PickSlips</string>
+                  <string>App_StockTake_Approved</string>
+                  <string>App_StockTake_PostingTotals</string>
+                  <string>App_StockTake_Processed</string>
+                  <string>App_StockTake_Scanned</string>
+                  <string>App_StockTake_ScannedSummary</string>
+                  <string>App_StockTake_UnScanned</string>
+                  <string>App_TrackingEntity</string>
+                  <string>App_Transactions_Location</string>
+                  <string>App_Warning_InventoryVariance</string>
+                  <string>App_Warning_Picking</string>
+                  <string>App_Warning_Receiving</string>
+                  <string>App_Warning_StockExpiry</string>
+                  <string>BarcodeMaster</string>
+                  <string>Base_App_Comparison</string>
+                  <string>Base_App_ExecutionProgress</string>
+                  <string>Base_App_TransactionPerUser</string>
+                  <string>Base_Inventory_Summary</string>
+                  <string>Base_Inventory_Summary_Location</string>
+                  <string>Base_Report_Inventory_Expiry</string>
+                  <string>Base_Stocktake</string>
+                  <string>CarryingEntity</string>
+                  <string>Category</string>
+                  <string>custom_DocumentTrackingLog</string>
+                  <string>custom_ImportField</string>
+                  <string>Custom_TrackingEntityAllocation</string>
+                  <string>Document</string>
+                  <string>DocumentDetail</string>
+                  <string>Emails</string>
+                  <string>ERP_ItemSegment</string>
+                  <string>ERP_StockOnHand</string>
+                  <string>FunctionParameter</string>
+                  <string>FunctionParameterLookup</string>
+                  <string>Functions</string>
+                  <string>Integration_Transactions</string>
+                  <string>Integration_TransactionsComplete</string>
+                  <string>IntegrationDocumentQueue</string>
+                  <string>IntegrationLog</string>
+                  <string>InventoryDailyBalance</string>
+                  <string>Label_Box</string>
+                  <string>Label_Location</string>
+                  <string>Label_MasterItem</string>
+                  <string>Label_Pallet</string>
+                  <string>Label_ShipLabel</string>
+                  <string>Label_TrackingEntity</string>
+                  <string>Label_Users</string>
+                  <string>Location</string>
+                  <string>MasterItem</string>
+                  <string>MasterItemAlias</string>
+                  <string>MasterItemAlias_View</string>
+                  <string>OptionalFields</string>
+                  <string>OptionalFieldValues_MasterItem</string>
+                  <string>OptionalFieldValues_TrackingEntity</string>
+                  <string>Process</string>
+                  <string>ProcessMembers</string>
+                  <string>ProcessStep</string>
+                  <string>ProcessStepLookup</string>
+                  <string>ProcessStepLookup_View</string>
+                  <string>ProcessStepLookupDynamic</string>
+                  <string>Report_App_Transactions</string>
+                  <string>Report_App_Warning_StockReorder</string>
+                  <string>Report_App_Warning_StockToReplenish</string>
+                  <string>Report_Inbound_ReceivePerUser</string>
+                  <string>Report_Inbound_Receiving</string>
+                  <string>Report_Inventory_Adjustments</string>
+                  <string>Report_Inventory_Moves</string>
+                  <string>Report_Inventory_OnhandDetail</string>
+                  <string>Report_Inventory_OnhandSummary</string>
+                  <string>Report_Inventory_OnHandSummary_ForBufferStock</string>
+                  <string>Report_Inventory_OnholdDetail</string>
+                  <string>Report_Inventory_Reclassify</string>
+                  <string>Report_Inventory_ReplenishHistory</string>
+                  <string>Report_Inventory_Returns</string>
+                  <string>Report_Inventory_Scrapped</string>
+                  <string>Report_Inventory_Takeon</string>
+                  <string>Report_Inventory_Transfer</string>
+                  <string>Report_Outbound_Picking</string>
+                  <string>Report_Outbound_PicksPerUser</string>
+                  <string>Report_StockTake_Variance</string>
+                  <string>Report_Transactions_ActivityCost</string>
+                  <string>Reports</string>
+                  <string>Status</string>
+                  <string>StockTakeLine</string>
+                  <string>StockTakeLines</string>
+                  <string>StockTakeScanned</string>
+                  <string>StockTakeSession</string>
+                  <string>SystemMetaData</string>
+                  <string>SystemSettings</string>
+                  <string>TrackingEntity</string>
+                  <string>TradingPartner</string>
+                  <string>Transaction</string>
+                  <string>Type</string>
+                  <string>UserGroup</string>
+                  <string>Users</string>
+                </Value>
+              </Variable>
+              <Variable Name="TableSchema" Type="System.Data.DataTable">
+                <Value>
+                  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+                    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="LabelPrintQueue" msdata:UseCurrentLocale="true">
+                      <xs:complexType>
+                        <xs:choice minOccurs="0" maxOccurs="unbounded">
+                          <xs:element name="LabelPrintQueue">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:long" />
+                                <xs:element name="DateQueued" type="xs:dateTime" />
+                                <xs:element name="LabelFormat">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="250" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="LabelParameter1" minOccurs="0">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="50" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="LabelParameter2" minOccurs="0">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="50" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="QuantityofLabels" type="xs:int" minOccurs="0" />
+                                <xs:element name="Printer" minOccurs="0">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="50" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="Status" minOccurs="0">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="50" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="DatePrinted" type="xs:dateTime" minOccurs="0" />
+                                <xs:element name="ResponseComment" minOccurs="0">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="200" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="User" minOccurs="0">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:maxLength value="50" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:choice>
+                      </xs:complexType>
+                      <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+                        <xs:selector xpath=".//LabelPrintQueue" />
+                        <xs:field xpath="ID" />
+                      </xs:unique>
+                    </xs:element>
+                  </xs:schema>
+                  <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" />
+                </Value>
+              </Variable>
+            </Value>
+          </Variable>
+        </Variables>
+        <ActionGroup ID="3056fea5-8ccf-4a3c-b06c-0c71a245de59" RunMethod="Sequential" MessagingEnabled="false">
+          <Actions>
+            <ForEachDatabaseRecordAction Name="For Each Database Record" ID="22e88757-71de-41e1-9cfc-6c4496ff5479" RunMethod="Sequential" MessagingEnabled="false">
+              <Actions>
+                <PrintAction Name="ShipPallet" ID="541a75d7-992f-4f47-8750-b4ebf2b21ef7" RunType="UseConditionExpression" IgnoreErrors="true" Document="C:\Program Files (x86)\Granite WMS\GraniteLabels\ShipLabel.btw" Printer="%Printer%" SaveAfterPrint="false" CloseDocumentAfterPrint="true" CopiesPerSerialNumber="%QuantityofLabels%" RecordRange="1..." UseDatabase="false" WarnWhenUsingTrueTypeFonts="true" PrintToFileFileName="%IntegrationName%.pdf" PrintToFileFolder="%IntegrationFileFolder%" ResendFailedJobs="false" NamedDataSourcePrefix="BTDS_">
+                  <ConditionExpression>
+                    <Expression>[%LabelFormat%] = 'SHIPLABEL.BTW' Or [%LabelFormat%] = 'SHIPPALLET.BTW'</Expression>
+                    <VariableDataTypes>{"LabelFormat":"Text"}</VariableDataTypes>
+                  </ConditionExpression>
+                  <NamedDataSources>
+                    <Field Name="Height">10</Field>
+                    <Field Name="Length">10</Field>
+                    <Field Name="Shipment">%LabelParameter2%</Field>
+                    <Field Name="Weight">100</Field>
+                    <Field Name="Width">10</Field>
+                  </NamedDataSources>
+                  <QueryPrompts Name="QPOrderNumber" Value="%LabelParameter1%" />
+                </PrintAction>
+                <PrintAction Name="ReceiptConfirm" ID="18775c80-e81e-4727-bace-4485d3030418" RunType="UseConditionExpression" IgnoreErrors="false" Document="C:\Program Files (x86)\Granite WMS\GraniteLabels\ReceiptConfirm.btw" Printer="%Printer%" SaveAfterPrint="false" CloseDocumentAfterPrint="true" CopiesPerSerialNumber="%QuantityofLabels%" RecordRange="1..." UseDatabase="false" WarnWhenUsingTrueTypeFonts="true" PrintToFileFileName="%IntegrationName%.pdf" PrintToFileFolder="%IntegrationFileFolder%" MaximumRetriesOnEngineFailure="2" NamedDataSourcePrefix="BTDS_">
+                  <ConditionExpression>
+                    <Expression>[%LabelFormat%] = 'RECEIPTCONFIRM.BTW'</Expression>
+                    <VariableDataTypes>{"LabelFormat":"Text"}</VariableDataTypes>
+                  </ConditionExpression>
+                  <NamedDataSources>
+                    <Field Name="Password">12345678</Field>
+                  </NamedDataSources>
+                  <QueryPrompts Name="QPPONumber" Value="%LabelParameter1%" />
+                </PrintAction>
+                <UpdateDatabaseRecordAction Name="Update Database Records" ID="e722724f-9a6a-4e9c-840a-cde007b5a66d" IgnoreErrors="false" UseConnectionFromIntegration="true" RecordSetVariableName="">
+                  <Variables>
+                    <Variable Name="__internal_UIMetaData_{10197317-68C1-4B0D-9BA4-0D5FEC3B6338}__" Type="Seagull.Integrations.VariableDictionary">
+                      <Value>
+                        <Variable Name="ColumnValues" Type="Seagull.IntegrationUI.Main.ViewModels.Actions.InsertRecordTableSchema">
+                          <Value Name="custom_LabelPrintQueue" QuotedEscapedName="[custom_LabelPrintQueue]" IsChecked="false" DBTypeName="">
+                            <Columns>
+                              <Column Name="ID" QuotedEscapedName="[ID]" TypeName="System.Int64" IsChecked="false" DBTypeName="bigint" />
+                              <Column Name="DateQueued" QuotedEscapedName="[DateQueued]" TypeName="System.DateTime" IsChecked="false" DBTypeName="datetime" />
+                              <Column Name="LabelFormat" QuotedEscapedName="[LabelFormat]" TypeName="System.String" IsChecked="false" DBTypeName="varchar" />
+                              <Column Name="LabelParameter1" QuotedEscapedName="[LabelParameter1]" TypeName="System.String" IsChecked="false" DBTypeName="varchar" />
+                              <Column Name="LabelParameter2" QuotedEscapedName="[LabelParameter2]" TypeName="System.String" IsChecked="false" DBTypeName="varchar" />
+                              <Column Name="QuantityofLabels" QuotedEscapedName="[QuantityofLabels]" TypeName="System.Int32" IsChecked="false" DBTypeName="int" />
+                              <Column Name="Printer" QuotedEscapedName="[Printer]" TypeName="System.String" IsChecked="false" DBTypeName="varchar" />
+                              <Column Name="Status" QuotedEscapedName="[Status]" TypeName="System.String" IsChecked="true" ValueString="PRINTED" DBTypeName="varchar" />
+                              <Column Name="DatePrinted" QuotedEscapedName="[DatePrinted]" TypeName="System.DateTime" IsChecked="false" DBTypeName="datetime" />
+                              <Column Name="ResponseComment" QuotedEscapedName="[ResponseComment]" TypeName="System.String" IsChecked="false" DBTypeName="varchar" />
+                              <Column Name="LabelParameter3" QuotedEscapedName="[LabelParameter3]" TypeName="System.String" IsChecked="false" DBTypeName="varchar" />
+                            </Columns>
+                          </Value>
+                        </Variable>
+                        <Variable Name="CriteriaString" Type="System.String">
+                          <Value>[[ID\]] = '%ID%'</Value>
+                        </Variable>
+                      </Value>
+                    </Variable>
+                  </Variables>
+                  <ConnectionInfo></ConnectionInfo>
+                  <Command>
+                    <Value>UPDATE [custom_LabelPrintQueue]&#xD;
+SET [Status] = 'PRINTED'&#xD;
+WHERE ([ID] = N'%ID%')</Value>
+                  </Command>
+                </UpdateDatabaseRecordAction>
+              </Actions>
+              <RecordSet.DataTarget>
+                <Value>%EventData%</Value>
+              </RecordSet.DataTarget>
+            </ForEachDatabaseRecordAction>
+          </Actions>
+        </ActionGroup>
+        <ConnectionInfo>&lt;?xml version="1.0" encoding="utf-8"?&gt;&#xD;
+&lt;DatabaseSetup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&#xD;
+  &lt;DatabaseConnections&gt;&#xD;
+    &lt;DatabaseConnection Name="@1" Type="SqlServer" Credentials="wlqdn7NhQzijhDDQLOS5xx62MVo0+7PnP3Aq61znWpOOP8bASBRy/Wc46mNsETE1"&gt;data source=192.168.5.6;initial catalog=GraniteDatabase;integrated security=False&lt;/DatabaseConnection&gt;&#xD;
+  &lt;/DatabaseConnections&gt;&#xD;
+  &lt;RecordSets&gt;&#xD;
+    &lt;RecordSet Name="GraniteDatabase" Connection="@1" Primary="true"&gt;&#xD;
+      &lt;SelectCommand Custom="false"&gt;SELECT [ID], [DateQueued], [LabelFormat], [LabelParameter1], [LabelParameter2], [QuantityofLabels], [Printer], [Status], [DatePrinted], [ResponseComment], [User] FROM [dbo].[LabelPrintQueue]&lt;/SelectCommand&gt;&#xD;
+      &lt;ProviderParameters&gt;&lt;/ProviderParameters&gt;&#xD;
+      &lt;LastKnownSchema&gt;&#xD;
+        &lt;Field Name="[GraniteDatabase].[LabelPrintQueue].[ID]" Type="Int64" /&gt;&#xD;
+        &lt;Field Name="[GraniteDatabase].[LabelPrintQueue].[DateQueued]" Type="DateTime" /&gt;&#xD;
+        &lt;Field Name="[GraniteDatabase].[LabelPrintQueue].[LabelFormat]" Type="String" /&gt;&#xD;
+        &lt;Field Name="[GraniteDatabase].[LabelPrintQueue].[LabelParameter1]" Type="String" /&gt;&#xD;
+        &lt;Field Name="[GraniteDatabase].[LabelPrintQueue].[LabelParameter2]" Type="String" /&gt;&#xD;
+        &lt;Field Name="[GraniteDatabase].[LabelPrintQueue].[QuantityofLabels]" Type="Int32" /&gt;&#xD;
+        &lt;Field Name="[GraniteDatabase].[LabelPrintQueue].[Printer]" Type="String" /&gt;&#xD;
+        &lt;Field Name="[GraniteDatabase].[LabelPrintQueue].[Status]" Type="String" /&gt;&#xD;
+        &lt;Field Name="[GraniteDatabase].[LabelPrintQueue].[DatePrinted]" Type="DateTime" /&gt;&#xD;
+        &lt;Field Name="[GraniteDatabase].[LabelPrintQueue].[ResponseComment]" Type="String" /&gt;&#xD;
+        &lt;Field Name="[GraniteDatabase].[LabelPrintQueue].[User]" Type="String" /&gt;&#xD;
+      &lt;/LastKnownSchema&gt;&#xD;
+    &lt;/RecordSet&gt;&#xD;
+  &lt;/RecordSets&gt;&#xD;
+&lt;/DatabaseSetup&gt;</ConnectionInfo>
+        <DbDetectionMethod.FieldValueChanged FieldName="Status" Value="ENTERED" NewValue="PRINTED" UpdateFieldAfterProcessing="true" />
+      </DatabaseIntegration>
+    </Actions>
+  </ActionGroup>
+  <Metadata>
+    <Properties>
+      <Properties Name="MostRecentlyUsedVariables" Type="System.String">
+        <Value>LabelFormat;EventData;Printer;QuantityofLabels</Value>
+      </Properties>
+      <Properties Name="SelectedDeploymentConfiguration" Type="System.String">
+        <Value>Custom</Value>
+      </Properties>
+      <Properties Name="SelectedIntegration" Type="System.Int32">
+        <Value>0</Value>
+      </Properties>
+      <Properties Name="SelectedOptionsPage" Type="System.String">
+        <Value>0;0</Value>
+      </Properties>
+    </Properties>
+  </Metadata>
+  <SourcePath>C:\Program Files (x86)\Granite WMS\GraniteLabels\ShippingLabelIntegration.btin</SourcePath>
+  <IsPrinting>false</IsPrinting>
+  <IsPrintPreview>false</IsPrintPreview>
+  <DeploymentConfigurations>
+    <DeploymentConfiguration CancelIfIntegrationFileExistsOnTargetServer="false">
+      <Name>Test</Name>
+      <TargetServers>
+        <TargetServer Name="This Computer" Description="" IsServerGroup="false" />
+      </TargetServers>
+      <DeploymentSchedule Method="Immediately">
+        <Schedule StartTime="2020-02-25T00:00:00" />
+      </DeploymentSchedule>
+    </DeploymentConfiguration>
+    <DeploymentConfiguration CancelIfIntegrationFileExistsOnTargetServer="false">
+      <Name>Production</Name>
+      <TargetServers>
+        <TargetServer Name="This Computer" Description="" IsServerGroup="false" />
+      </TargetServers>
+      <DeploymentSchedule Method="OnSpecifiedDate">
+        <Schedule StartTime="2020-02-25T00:00:00" />
+      </DeploymentSchedule>
+    </DeploymentConfiguration>
+  </DeploymentConfigurations>
+</IntegrationFile>
