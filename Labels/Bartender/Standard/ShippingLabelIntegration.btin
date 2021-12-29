@@ -279,7 +279,7 @@
                   </Variables>
                   <ConnectionInfo></ConnectionInfo>
                   <Command>
-                    <Value>UPDATE [custom_LabelPrintQueue]&#xD;
+                    <Value>UPDATE [LabelPrintQueue]&#xD;
 SET [Status] = 'PRINTED'&#xD;
 WHERE ([ID] = N'%ID%')</Value>
                   </Command>
@@ -332,7 +332,7 @@ WHERE ([ID] = N'%ID%')</Value>
         <Value>0</Value>
       </Properties>
       <Properties Name="SelectedOptionsPage" Type="System.String">
-        <Value>0;0</Value>
+        <Value>1;0;2</Value>
       </Properties>
     </Properties>
   </Metadata>
